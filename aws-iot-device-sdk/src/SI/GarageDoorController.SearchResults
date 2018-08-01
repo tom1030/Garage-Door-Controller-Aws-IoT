@@ -1,0 +1,19 @@
+---- xTaskGetTickCount Matches (19 in 10 files) ----
+Aws_shadow.c (e:\garagedoorcontrollerwithawsiot\aws-iot-device-sdk\aws-iot-device-sdk\src\app):			tick = xTaskGetTickCount();
+Btn.c (e:\garagedoorcontrollerwithawsiot\aws-iot-device-sdk\aws-iot-device-sdk\src\hal_adapter\button): 	tick = (uint32_t)xTaskGetTickCount() * portTICK_PERIOD_MS;
+Croutine.c (e:\garagedoorcontrollerwithawsiot\aws-iot-device-sdk\aws-iot-device-sdk\src\asf\thirdparty\freertos\freertos-8.0.1\source):	xPassedTicks = xTaskGetTickCount() - xLastTickCount;
+Mpu_wrappers.h (e:\garagedoorcontrollerwithawsiot\aws-iot-device-sdk\aws-iot-device-sdk\src\asf\thirdparty\freertos\freertos-8.0.1\source\include):		#define xTaskGetTickCount				MPU_xTaskGetTickCount
+Sw_timer.c (e:\garagedoorcontrollerwithawsiot\aws-iot-device-sdk\aws-iot-device-sdk\src\ota):		    uint32_t sw_timer_tick = (uint32_t)xTaskGetTickCount() * portTICK_PERIOD_MS;
+Sw_timer.c (e:\garagedoorcontrollerwithawsiot\aws-iot-device-sdk\aws-iot-device-sdk\src\ota):		    uint32_t sw_timer_tick = (uint32_t)xTaskGetTickCount() * portTICK_PERIOD_MS;
+Task.h (e:\garagedoorcontrollerwithawsiot\aws-iot-device-sdk\aws-iot-device-sdk\src\asf\thirdparty\freertos\freertos-8.0.1\source\include):	 xLastWakeTime = xTaskGetTickCount ();
+Task.h (e:\garagedoorcontrollerwithawsiot\aws-iot-device-sdk\aws-iot-device-sdk\src\asf\thirdparty\freertos\freertos-8.0.1\source\include): * <PRE>TickType_t xTaskGetTickCount( void );</PRE>
+Task.h (e:\garagedoorcontrollerwithawsiot\aws-iot-device-sdk\aws-iot-device-sdk\src\asf\thirdparty\freertos\freertos-8.0.1\source\include): * \defgroup xTaskGetTickCount xTaskGetTickCount
+Task.h (e:\garagedoorcontrollerwithawsiot\aws-iot-device-sdk\aws-iot-device-sdk\src\asf\thirdparty\freertos\freertos-8.0.1\source\include):TickType_t xTaskGetTickCount( void ) PRIVILEGED_FUNCTION;
+Task.h (e:\garagedoorcontrollerwithawsiot\aws-iot-device-sdk\aws-iot-device-sdk\src\asf\thirdparty\freertos\freertos-8.0.1\source\include): * This is a version of xTaskGetTickCount() that is safe to be called from an
+Tasks.c (e:\garagedoorcontrollerwithawsiot\aws-iot-device-sdk\aws-iot-device-sdk\src\asf\thirdparty\freertos\freertos-8.0.1\source):TickType_t xTaskGetTickCount( void )
+Timer.c (e:\garagedoorcontrollerwithawsiot\aws-iot-device-sdk\aws-iot-device-sdk\src\aws\platform\d21-1500\common):	time = (uint32_t)xTaskGetTickCount() * portTICK_PERIOD_MS;
+Timer.c (e:\garagedoorcontrollerwithawsiot\aws-iot-device-sdk\aws-iot-device-sdk\src\aws\platform\d21-1500\common):	time = (uint32_t)xTaskGetTickCount() * portTICK_PERIOD_MS;
+Timer.c (e:\garagedoorcontrollerwithawsiot\aws-iot-device-sdk\aws-iot-device-sdk\src\aws\platform\d21-1500\common):	time = (uint32_t)xTaskGetTickCount() * portTICK_PERIOD_MS;
+Timers.c (e:\garagedoorcontrollerwithawsiot\aws-iot-device-sdk\aws-iot-device-sdk\src\asf\thirdparty\freertos\freertos-8.0.1\source):	xTimeNow = xTaskGetTickCount();
+Timers.h (e:\garagedoorcontrollerwithawsiot\aws-iot-device-sdk\aws-iot-device-sdk\src\asf\thirdparty\freertos\freertos-8.0.1\source\include):#define xTimerStart( xTimer, xTicksToWait ) xTimerGenericCommand( ( xTimer ), tmrCOMMAND_START, ( xTaskGetTickCount() ), NULL, ( xTicksToWait ) )
+Timers.h (e:\garagedoorcontrollerwithawsiot\aws-iot-device-sdk\aws-iot-device-sdk\src\asf\thirdparty\freertos\freertos-8.0.1\source\include):#define xTimerReset( xTimer, xTicksToWait ) xTimerGenericCommand( ( xTimer ), tmrCOMMAND_RESET, ( xTaskGetTickCount() ), NULL, ( xTicksToWait ) )
